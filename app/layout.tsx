@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "../styles/globals.css";
+import Image from "next/image";
 
 export const metadata = {
   title: 'La Madriguera',
@@ -16,7 +17,8 @@ export default function RootLayout({
   const header = (
   <header>
     <div className="text-center bg-gray-700 p-8 my-6 rounded-md">
-     <Link href="/">
+    <Link href="/">
+    <Image src="/favicon.png" width={100} height={100} className="mx-auto"></Image>
      <h1 className="text-3xl font-bold text-white">La Madriguera</h1>
      </Link>
       <p className="text-slate-50">¡Bienvenido/a a la Madriguera!</p>
